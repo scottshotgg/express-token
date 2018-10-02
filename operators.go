@@ -65,13 +65,13 @@ var OperatorMap = map[string]Token{
 			String: "!",
 		},
 	},
-	"_": Token{
-		Type: Underscore,
-		Value: Value{
-			Type:   "underscore",
-			String: "_",
-		},
-	},
+	// "_": Token{
+	// 	Type: Underscore,
+	// 	Value: Value{
+	// 		Type:   "underscore",
+	// 		String: "_",
+	// 	},
+	// },
 	// FIXME: DOLLA DOLLA BILLS YALL: define this
 	"$": Token{
 		Type: DDBY,
