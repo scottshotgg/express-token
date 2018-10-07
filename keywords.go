@@ -9,6 +9,7 @@ var KeywordMap = map[string]Token{
 			String: "let",
 		},
 	},
+
 	"select": Token{
 		ID:   9,
 		Type: "SELECT",
@@ -17,14 +18,16 @@ var KeywordMap = map[string]Token{
 			String: "select",
 		},
 	},
+
 	"for": Token{
 		ID:   9,
 		Type: "FOR",
 		Value: Value{
-			Type:   "keyword", // TODO: what to put here?
+			Type:   "loop", // TODO: what to put here?
 			String: "for",
 		},
 	},
+
 	"if": Token{
 		ID:   9,
 		Type: "IF",
@@ -33,14 +36,25 @@ var KeywordMap = map[string]Token{
 			String: "if",
 		},
 	},
+
+	"else": Token{
+		ID:   9,
+		Type: "ELSE",
+		Value: Value{
+			Type:   "keyword", // TODO: what to put here?
+			String: "else",
+		},
+	},
+
 	"in": Token{
 		ID:   9,
-		Type: "IN",
+		Type: "KEYWORD",
 		Value: Value{
 			Type:   "keyword", // TODO: what to put here?
 			String: "in",
 		},
 	},
+
 	"of": Token{
 		ID:   9,
 		Type: "OF",
@@ -49,6 +63,7 @@ var KeywordMap = map[string]Token{
 			String: "of",
 		},
 	},
+
 	"function": Token{
 		ID:   9,
 		Type: "FUNCTION",
@@ -57,6 +72,7 @@ var KeywordMap = map[string]Token{
 			String: "function",
 		},
 	},
+
 	"func": Token{
 		ID:   9,
 		Type: "FUNC",
@@ -65,6 +81,7 @@ var KeywordMap = map[string]Token{
 			String: "func",
 		},
 	},
+
 	"fn": Token{
 		ID:   9,
 		Type: "FN",
@@ -73,6 +90,7 @@ var KeywordMap = map[string]Token{
 			String: "fn",
 		},
 	},
+
 	"return": Token{
 		ID:   9,
 		Type: "RETURN",
@@ -81,6 +99,7 @@ var KeywordMap = map[string]Token{
 			String: "return",
 		},
 	},
+
 	"onexit": Token{
 		ID:   9,
 		Type: "ONEXIT",
@@ -90,6 +109,7 @@ var KeywordMap = map[string]Token{
 			String: "onexit",
 		},
 	},
+
 	"onreturn": Token{
 		ID:   9,
 		Type: "ONRETURN",
@@ -99,6 +119,7 @@ var KeywordMap = map[string]Token{
 			String: "onreturn",
 		},
 	},
+
 	"onleave": Token{
 		ID:   9,
 		Type: "ONLEAVE",
@@ -108,6 +129,7 @@ var KeywordMap = map[string]Token{
 			String: "onleave",
 		},
 	},
+
 	"defer": Token{
 		ID:   9,
 		Type: "DEFER",

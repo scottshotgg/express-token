@@ -9,6 +9,7 @@ var OperatorMap = map[string]Token{
 			String: "+",
 		},
 	},
+
 	"-": Token{
 		Type: SecOp,
 		Value: Value{
@@ -16,6 +17,7 @@ var OperatorMap = map[string]Token{
 			String: "-",
 		},
 	},
+
 	"*": Token{
 		Type: PriOp,
 		Value: Value{
@@ -23,6 +25,7 @@ var OperatorMap = map[string]Token{
 			String: "*",
 		},
 	},
+
 	"/": Token{
 		Type: PriOp,
 		Value: Value{
@@ -30,6 +33,7 @@ var OperatorMap = map[string]Token{
 			String: "/",
 		},
 	},
+
 	"\\": Token{
 		Type: PriOp,
 		Value: Value{
@@ -37,6 +41,7 @@ var OperatorMap = map[string]Token{
 			String: "\\",
 		},
 	},
+
 	"%": Token{
 		Type: PriOp,
 		Value: Value{
@@ -44,6 +49,7 @@ var OperatorMap = map[string]Token{
 			String: "%",
 		},
 	},
+
 	"^": Token{
 		Type: PriOp,
 		Value: Value{
@@ -51,6 +57,7 @@ var OperatorMap = map[string]Token{
 			String: "^",
 		},
 	},
+
 	"!": Token{
 		Type: Bang,
 		Value: Value{
@@ -58,6 +65,7 @@ var OperatorMap = map[string]Token{
 			String: "!",
 		},
 	},
+
 	"?": Token{
 		Type: QuestionMark,
 		Value: Value{
@@ -65,6 +73,7 @@ var OperatorMap = map[string]Token{
 			String: "!",
 		},
 	},
+
 	// "_": Token{
 	// 	Type: Underscore,
 	// 	Value: Value{
@@ -80,6 +89,7 @@ var OperatorMap = map[string]Token{
 			String: "$",
 		},
 	},
+
 	"&": Token{
 		Type: Ampersand,
 		Value: Value{
@@ -87,6 +97,7 @@ var OperatorMap = map[string]Token{
 			String: "&",
 		},
 	},
+
 	"|": Token{
 		Type: Pipe,
 		Value: Value{
@@ -94,6 +105,7 @@ var OperatorMap = map[string]Token{
 			String: "|",
 		},
 	},
+
 	"#": Token{
 		Type: Hash,
 		Value: Value{
@@ -101,6 +113,7 @@ var OperatorMap = map[string]Token{
 			String: "#",
 		},
 	},
+
 	".": Token{
 		Type: Accessor,
 		Value: Value{
@@ -108,6 +121,7 @@ var OperatorMap = map[string]Token{
 			String: ".",
 		},
 	},
+
 	"==": Token{
 		Type: IsEqual,
 		Value: Value{
@@ -134,6 +148,7 @@ var OperatorMap = map[string]Token{
 			String: ".+",
 		},
 	},
+
 	".-": Token{
 		Type: "VEC_SUB",
 		Value: Value{
@@ -141,6 +156,7 @@ var OperatorMap = map[string]Token{
 			String: ".-",
 		},
 	},
+
 	".*": Token{
 		Type: "VEC_MULT",
 		Value: Value{
@@ -148,6 +164,7 @@ var OperatorMap = map[string]Token{
 			String: ".*",
 		},
 	},
+
 	"./": Token{
 		Type: "VEC_DIV",
 		Value: Value{

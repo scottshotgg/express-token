@@ -109,8 +109,9 @@ const (
 	PrivateAccessType = "private"
 
 	Loop = "LOOP"
-	For  = "for"
+	For  = "FOR"
 	If   = "IF"
+	Else = "ELSE"
 )
 
 func init() {
