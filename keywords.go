@@ -57,10 +57,19 @@ var KeywordMap = map[string]Token{
 
 	"of": Token{
 		ID:   9,
-		Type: "OF",
+		Type: "KEYWORD",
 		Value: Value{
 			Type:   "keyword", // TODO: what to put here?
 			String: "of",
+		},
+	},
+
+	"over": Token{
+		ID:   9,
+		Type: "KEYWORD",
+		Value: Value{
+			Type:   "keyword", // TODO: what to put here?
+			String: "over",
 		},
 	},
 
