@@ -10,6 +10,22 @@ var KeywordMap = map[string]Token{
 		},
 	},
 
+	"import": Token{
+		Type: "IMPORT",
+		Value: Value{
+			Type:   "keyword",
+			String: "import",
+		},
+	},
+
+	"include": Token{
+		Type: "include",
+		Value: Value{
+			Type:   "keyword",
+			String: "include",
+		},
+	},
+
 	"select": Token{
 		ID:   9,
 		Type: "SELECT",

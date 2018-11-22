@@ -14,7 +14,7 @@ type Token struct {
 	True   interface{} `json:",omitempty"`
 }
 
-// TokenMap ...
+//  ...
 var (
 	mapArray = []map[string]Token{
 		AssignMap,
