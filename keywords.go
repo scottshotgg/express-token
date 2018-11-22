@@ -19,7 +19,7 @@ var KeywordMap = map[string]Token{
 	},
 
 	"include": Token{
-		Type: "include",
+		Type: "INCLUDE",
 		Value: Value{
 			Type:   "keyword",
 			String: "include",
