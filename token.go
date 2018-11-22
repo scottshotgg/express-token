@@ -90,6 +90,8 @@ const (
 	Accessor     = "ACCESSOR"
 	IsEqual      = "IS_EQUAL"
 	Increment    = "INCREMENT"
+	Import       = "IMPORT"
+	Include      = "INCLUDE"
 
 	VarType         = "var"
 	IntType         = "int"
