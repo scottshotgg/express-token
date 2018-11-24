@@ -3,15 +3,39 @@ package token
 // KeywordMap is a map of all the keywords
 var KeywordMap = map[string]Token{
 	"let": Token{
-		Type: "TYPE",
+		Type: Let,
 		Value: Value{
-			Type:   "var", // this doesn't create a var
+			Type:   "keyword", // this doesn't create a var
 			String: "let",
 		},
 	},
 
+	"type": Token{
+		Type: TypeDef,
+		Value: Value{
+			Type:   "typedef", // this doesn't create a var
+			String: "type",
+		},
+	},
+
+	"struct": Token{
+		Type: Struct,
+		Value: Value{
+			Type:   "keyword", // this doesn't create a var
+			String: "struct",
+		},
+	},
+
+	"package": Token{
+		Type: Package,
+		Value: Value{
+			Type:   "keyword",
+			String: "package",
+		},
+	},
+
 	"import": Token{
-		Type: "IMPORT",
+		Type: Import,
 		Value: Value{
 			Type:   "keyword",
 			String: "import",
@@ -19,7 +43,7 @@ var KeywordMap = map[string]Token{
 	},
 
 	"include": Token{
-		Type: "INCLUDE",
+		Type: Include,
 		Value: Value{
 			Type:   "keyword",
 			String: "include",

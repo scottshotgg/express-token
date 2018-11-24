@@ -45,6 +45,9 @@ const (
 	Var          = "VAR"
 	Ident        = "IDENT"
 	Type         = "TYPE"
+	Let          = "LET"
+	TypeDef      = "TYPEDEF"
+	Struct       = "STRUCT"
 	Whitespace   = "WS"
 	Literal      = "LITERAL"
 	Attribute    = "ATTRIBUTE"
@@ -90,6 +93,7 @@ const (
 	Accessor     = "ACCESSOR"
 	IsEqual      = "IS_EQUAL"
 	Increment    = "INCREMENT"
+	Package      = "PACKAGE"
 	Import       = "IMPORT"
 	Include      = "INCLUDE"
 
