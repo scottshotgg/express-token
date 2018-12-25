@@ -106,7 +106,7 @@ const (
 	ObjectType      = "object"
 	StructType      = "struct"
 	ArrayType       = "array"
-	FunctionType    = "function"
+	FunctionType    = "func"
 	SetType         = "set"
 	IntArrayType    = "int[]"
 	StringArrayType = "string[]"

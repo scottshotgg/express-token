@@ -13,7 +13,7 @@ var KeywordMap = map[string]Token{
 	"type": Token{
 		Type: TypeDef,
 		Value: Value{
-			Type:   "typedef", // this doesn't create a var
+			Type:   "keyword", // this doesn't create a var
 			String: "type",
 		},
 	},
@@ -124,7 +124,7 @@ var KeywordMap = map[string]Token{
 
 	"func": Token{
 		ID:   9,
-		Type: "FUNC",
+		Type: "FUNCTION",
 		Value: Value{
 			Type:   "keyword", // TODO: what to put here?
 			String: "func",
