@@ -97,8 +97,6 @@ const (
 	Package      = "PACKAGE"
 	Import       = "IMPORT"
 	Include      = "INCLUDE"
-	Launch       = "LAUNCH"
-	Enum         = "ENUM"
 
 	VarType         = "var"
 	IntType         = "int"

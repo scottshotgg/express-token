@@ -48,7 +48,7 @@ const (
 	Let          = "LET"
 	TypeDef      = "TYPEDEF"
 	Struct       = "STRUCT"
-	Map          = "MAP"
+	Maps         = "MAP"
 	Whitespace   = "WS"
 	Literal      = "LITERAL"
 	Attribute    = "ATTRIBUTE"
@@ -97,8 +97,6 @@ const (
 	Package      = "PACKAGE"
 	Import       = "IMPORT"
 	Include      = "INCLUDE"
-	Launch       = "LAUNCH"
-	Enum         = "ENUM"
 
 	VarType         = "var"
 	IntType         = "int"

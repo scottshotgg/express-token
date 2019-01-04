@@ -44,15 +44,6 @@ var TypeMap = map[string]Token{
 			String: BoolType,
 		},
 	},
-
-	"map": Token{
-		Type: Type,
-		Value: Value{
-			Type:   "map", // this doesn't create a var
-			String: "map",
-		},
-	},
-
 	ObjectType: Token{
 		Type: Type,
 		Value: Value{

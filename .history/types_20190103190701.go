@@ -46,9 +46,9 @@ var TypeMap = map[string]Token{
 	},
 
 	"map": Token{
-		Type: Type,
+		Type: Map,
 		Value: Value{
-			Type:   "map", // this doesn't create a var
+			Type:   "keyword", // this doesn't create a var
 			String: "map",
 		},
 	},

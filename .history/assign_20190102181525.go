@@ -10,17 +10,17 @@ var AssignMap = map[string]Token{
 		},
 	},
 	":": Token{
-		Type: Set,
+		Type: "ASSIGN",
 		Value: Value{
 			Type:   "set",
 			String: ":",
 		},
 	},
-	// ":=": Token{
-	// 	Type: "ASSIGN",
-	// 	Value: Value{
-	// 		Type:   "init",
-	// 		String: ":=",
-	// 	},
-	// },
+	":=": Token{
+		Type: "ASSIGN",
+		Value: Value{
+			Type:   "init",
+			String: ":=",
+		},
+	},
 }

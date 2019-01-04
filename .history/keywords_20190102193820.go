@@ -26,6 +26,14 @@ var KeywordMap = map[string]Token{
 		},
 	},
 
+	"map": Token{
+		Type: Map,
+		Value: Value{
+			Type:   "keyword", // this doesn't create a var
+			String: "map",
+		},
+	},
+
 	"package": Token{
 		Type: Package,
 		Value: Value{
@@ -47,14 +55,6 @@ var KeywordMap = map[string]Token{
 		Value: Value{
 			Type:   "keyword",
 			String: "include",
-		},
-	},
-
-	"launch": Token{
-		Type: Launch,
-		Value: Value{
-			Type:   "keyword",
-			String: "launch",
 		},
 	},
 

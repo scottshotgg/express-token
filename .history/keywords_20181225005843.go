@@ -50,22 +50,6 @@ var KeywordMap = map[string]Token{
 		},
 	},
 
-	"launch": Token{
-		Type: Launch,
-		Value: Value{
-			Type:   "keyword",
-			String: "launch",
-		},
-	},
-
-	"enum": Token{
-		Type: Enum,
-		Value: Value{
-			Type:   "keyword",
-			String: "enum",
-		},
-	},
-
 	"select": Token{
 		ID:   9,
 		Type: "SELECT",
