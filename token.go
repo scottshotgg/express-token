@@ -48,6 +48,7 @@ const (
 	Let          = "LET"
 	TypeDef      = "TYPEDEF"
 	Struct       = "STRUCT"
+	Object       = "OBJECT"
 	Map          = "MAP"
 	Whitespace   = "WS"
 	Literal      = "LITERAL"

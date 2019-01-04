@@ -5,7 +5,7 @@ var KeywordMap = map[string]Token{
 	"let": Token{
 		Type: Let,
 		Value: Value{
-			Type:   "keyword", // this doesn't create a var
+			Type:   "keyword",
 			String: "let",
 		},
 	},
@@ -13,7 +13,7 @@ var KeywordMap = map[string]Token{
 	"type": Token{
 		Type: TypeDef,
 		Value: Value{
-			Type:   "keyword", // this doesn't create a var
+			Type:   "keyword",
 			String: "type",
 		},
 	},
@@ -21,8 +21,16 @@ var KeywordMap = map[string]Token{
 	"struct": Token{
 		Type: Struct,
 		Value: Value{
-			Type:   "keyword", // this doesn't create a var
+			Type:   "keyword",
 			String: "struct",
+		},
+	},
+
+	"object": Token{
+		Type: Object,
+		Value: Value{
+			Type:   "keyword",
+			String: "object",
 		},
 	},
 
