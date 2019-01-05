@@ -60,15 +60,23 @@ var TypeMap = map[string]Token{
 		},
 	},
 
+	"stmt": Token{
+		Type: Type,
+		Value: Value{
+			Type:   "stmt", // this doesn't create a var
+			String: "stmt",
+		},
+	},
+
 	// Make object a keyword like struct
 	// Left this in here for express-ast to continue working
-	// ObjectType: Token{
-	// 	Type: Type,
-	// 	Value: Value{
-	// 		Type:   ObjectType,
-	// 		String: ObjectType,
-	// 	},
-	// },
+	ObjectType: Token{
+		Type: Type,
+		Value: Value{
+			Type:   ObjectType,
+			String: ObjectType,
+		},
+	},
 	// StructType: Token{
 	// 	Type: Type,
 	// 	Value: Value{
