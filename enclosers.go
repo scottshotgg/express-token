@@ -3,14 +3,16 @@ package token
 // EncloserMap holds all valid encloser tokens
 var EncloserMap = map[string]Token{
 	"(": Token{
-		Type: "L_PAREN",
+		WSNotRequired: true,
+		Type:          "L_PAREN",
 		Value: Value{
 			Type:   "op_3",
 			String: "(",
 		},
 	},
 	")": Token{
-		Type: "R_PAREN",
+		WSNotRequired: true,
+		Type:          "R_PAREN",
 		Value: Value{
 			Type:   "op_3",
 			String: ")",
@@ -18,14 +20,16 @@ var EncloserMap = map[string]Token{
 	},
 
 	"{": Token{
-		Type: "L_BRACE",
+		WSNotRequired: true,
+		Type:          "L_BRACE",
 		Value: Value{
 			Type:   "op_3",
 			String: "{",
 		},
 	},
 	"}": Token{
-		Type: "R_BRACE",
+		WSNotRequired: true,
+		Type:          "R_BRACE",
 		Value: Value{
 			Type:   "op_3",
 			String: "}",
@@ -33,14 +37,16 @@ var EncloserMap = map[string]Token{
 	},
 
 	"[": Token{
-		Type: "L_BRACKET",
+		WSNotRequired: true,
+		Type:          "L_BRACKET",
 		Value: Value{
 			Type:   "op_3",
 			String: "[",
 		},
 	},
 	"]": Token{
-		Type: "R_BRACKET",
+		WSNotRequired: true,
+		Type:          "R_BRACKET",
 		Value: Value{
 			Type:   "lthan",
 			String: "]",
@@ -48,14 +54,16 @@ var EncloserMap = map[string]Token{
 	},
 
 	"<": Token{
-		Type: "L_THAN",
+		WSNotRequired: true,
+		Type:          "L_THAN",
 		Value: Value{
 			Type:   "lthan",
 			String: "<",
 		},
 	},
 	">": Token{
-		Type: "G_THAN",
+		WSNotRequired: true,
+		Type:          "G_THAN",
 		Value: Value{
 			Type:   "rthan",
 			String: ">",
@@ -63,35 +71,40 @@ var EncloserMap = map[string]Token{
 	},
 
 	"`": Token{
-		Type: "GRAVE",
+		WSNotRequired: true,
+		Type:          "GRAVE",
 		Value: Value{
 			Type:   "op_3",
 			String: "`",
 		},
 	},
 	"~": Token{
-		Type: "TILDE",
+		WSNotRequired: true,
+		Type:          "TILDE",
 		Value: Value{
 			Type:   "op_3",
 			String: "~",
 		},
 	},
 	"'": Token{
-		Type: SQuote,
+		WSNotRequired: true,
+		Type:          SQuote,
 		Value: Value{
 			Type:   "squote",
 			String: "'",
 		},
 	},
 	"\"": Token{
-		Type: DQuote,
+		WSNotRequired: true,
+		Type:          DQuote,
 		Value: Value{
 			Type:   "dquote",
 			String: "\"",
 		},
 	},
 	"@": Token{
-		Type: At,
+		WSNotRequired: true,
+		Type:          At,
 		Value: Value{
 			Type:   "op_3",
 			String: "@",

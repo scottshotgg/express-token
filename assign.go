@@ -3,14 +3,16 @@ package token
 // AssignMap holds every assignment operator
 var AssignMap = map[string]Token{
 	"=": Token{
-		Type: Assign,
+		WSNotRequired: true,
+		Type:          Assign,
 		Value: Value{
 			Type:   "assign",
 			String: "=",
 		},
 	},
 	":": Token{
-		Type: Set,
+		WSNotRequired: true,
+		Type:          Set,
 		Value: Value{
 			Type:   "set",
 			String: ":",

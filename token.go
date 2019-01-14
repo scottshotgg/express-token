@@ -16,10 +16,11 @@ type (
 
 	// Token ...
 	Token struct {
-		ID       int    `json:",omitempty"`
-		Type     string `json:",omitempty"`
-		Expected string `json:",omitempty"`
-		Value    Value  `json:",omitempty"`
+		ID            int    `json:",omitempty"`
+		Type          string `json:",omitempty"`
+		Expected      string `json:",omitempty"`
+		Value         Value  `json:",omitempty"`
+		WSNotRequired bool   `json:",omitempty"`
 	}
 )
 
@@ -96,6 +97,8 @@ const (
 	IsEqual      = "IS_EQUAL"
 	Increment    = "INCREMENT"
 	Package      = "PACKAGE"
+	Use          = "USE"
+	C            = "C"
 	Import       = "IMPORT"
 	Include      = "INCLUDE"
 	Launch       = "LAUNCH"

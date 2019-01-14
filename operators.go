@@ -3,7 +3,8 @@ package token
 // OperatorMap holds all defined operator tokens
 var OperatorMap = map[string]Token{
 	"+": Token{
-		Type: SecOp,
+		WSNotRequired: true,
+		Type:          SecOp,
 		Value: Value{
 			Type:   "add",
 			String: "+",
@@ -11,7 +12,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"-": Token{
-		Type: SecOp,
+		WSNotRequired: true,
+		Type:          SecOp,
 		Value: Value{
 			Type:   "sub",
 			String: "-",
@@ -19,7 +21,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"*": Token{
-		Type: PriOp,
+		WSNotRequired: true,
+		Type:          PriOp,
 		Value: Value{
 			Type:   "mult",
 			String: "*",
@@ -27,7 +30,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"/": Token{
-		Type: PriOp,
+		WSNotRequired: true,
+		Type:          PriOp,
 		Value: Value{
 			Type:   "div",
 			String: "/",
@@ -35,7 +39,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"\\": Token{
-		Type: PriOp,
+		WSNotRequired: true,
+		Type:          PriOp,
 		Value: Value{
 			Type:   "backslash",
 			String: "\\",
@@ -43,7 +48,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"%": Token{
-		Type: PriOp,
+		WSNotRequired: true,
+		Type:          PriOp,
 		Value: Value{
 			Type:   "mod",
 			String: "%",
@@ -51,7 +57,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"^": Token{
-		Type: PriOp,
+		WSNotRequired: true,
+		Type:          PriOp,
 		Value: Value{
 			Type:   "exp",
 			String: "^",
@@ -59,7 +66,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"!": Token{
-		Type: Bang,
+		WSNotRequired: true,
+		Type:          Bang,
 		Value: Value{
 			Type:   "bang",
 			String: "!",
@@ -67,7 +75,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"?": Token{
-		Type: QuestionMark,
+		WSNotRequired: true,
+		Type:          QuestionMark,
 		Value: Value{
 			Type:   "qm",
 			String: "!",
@@ -83,7 +92,8 @@ var OperatorMap = map[string]Token{
 	// },
 	// FIXME: DOLLA DOLLA BILLS YALL: define this
 	"$": Token{
-		Type: DDBY,
+		WSNotRequired: true,
+		Type:          DDBY,
 		Value: Value{
 			Type:   "ddby",
 			String: "$",
@@ -91,7 +101,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"&": Token{
-		Type: Ampersand,
+		WSNotRequired: true,
+		Type:          Ampersand,
 		Value: Value{
 			Type:   "op_3",
 			String: "&",
@@ -99,7 +110,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"|": Token{
-		Type: Pipe,
+		WSNotRequired: true,
+		Type:          Pipe,
 		Value: Value{
 			Type:   "op_3",
 			String: "|",
@@ -107,7 +119,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"#": Token{
-		Type: Hash,
+		WSNotRequired: true,
+		Type:          Hash,
 		Value: Value{
 			Type:   "op_3",
 			String: "#",
@@ -115,7 +128,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	".": Token{
-		Type: Accessor,
+		WSNotRequired: true,
+		Type:          Accessor,
 		Value: Value{
 			Type:   "period",
 			String: ".",
@@ -123,7 +137,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"==": Token{
-		Type: IsEqual,
+		WSNotRequired: true,
+		Type:          IsEqual,
 		Value: Value{
 			Type:   "is_equal",
 			String: "==",
@@ -132,7 +147,8 @@ var OperatorMap = map[string]Token{
 
 	// Increment
 	"++": Token{
-		Type: Increment,
+		WSNotRequired: true,
+		Type:          Increment,
 		Value: Value{
 			Type:   "increment",
 			String: "++",
@@ -142,7 +158,8 @@ var OperatorMap = map[string]Token{
 	// TODO: add the templated operators ability to the parser and remove the tokens completely
 	// VECTOR OPERANDS
 	".+": Token{
-		Type: "VEC_ADD",
+		WSNotRequired: true,
+		Type:          "VEC_ADD",
 		Value: Value{
 			Type:   "op_3",
 			String: ".+",
@@ -150,7 +167,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	".-": Token{
-		Type: "VEC_SUB",
+		WSNotRequired: true,
+		Type:          "VEC_SUB",
 		Value: Value{
 			Type:   "op_4",
 			String: ".-",
@@ -158,7 +176,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	".*": Token{
-		Type: "VEC_MULT",
+		WSNotRequired: true,
+		Type:          "VEC_MULT",
 		Value: Value{
 			Type:   "op_3",
 			String: ".*",
@@ -166,7 +185,8 @@ var OperatorMap = map[string]Token{
 	},
 
 	"./": Token{
-		Type: "VEC_DIV",
+		WSNotRequired: true,
+		Type:          "VEC_DIV",
 		Value: Value{
 			Type:   "op_3",
 			String: "./",

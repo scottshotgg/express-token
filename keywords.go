@@ -42,6 +42,22 @@ var KeywordMap = map[string]Token{
 		},
 	},
 
+	// "c": Token{
+	// 	Type: C,
+	// 	Value: Value{
+	// 		Type:   "keyword",
+	// 		String: "c",
+	// 	},
+	// },
+
+	"use": Token{
+		Type: Use,
+		Value: Value{
+			Type:   "keyword",
+			String: "Use",
+		},
+	},
+
 	"import": Token{
 		Type: Import,
 		Value: Value{
