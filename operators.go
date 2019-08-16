@@ -145,6 +145,24 @@ var OperatorMap = map[string]Token{
 		},
 	},
 
+	">=": Token{
+		WSNotRequired: true,
+		Type:          EqOrGThan,
+		Value: Value{
+			Type:   "eq or greater than",
+			String: ">=",
+		},
+	},
+
+	"<=": Token{
+		WSNotRequired: true,
+		Type:          EqOrLThan,
+		Value: Value{
+			Type:   "eq or less than",
+			String: "<=",
+		},
+	},
+
 	// Increment
 	"++": Token{
 		WSNotRequired: true,

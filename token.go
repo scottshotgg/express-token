@@ -95,6 +95,8 @@ const (
 	QuestionMark = "QM"
 	Accessor     = "ACCESSOR"
 	IsEqual      = "IS_EQUAL"
+	EqOrGThan    = "EQ_OR_GT"
+	EqOrLThan    = "EQ_OR_LT"
 	Increment    = "INCREMENT"
 	Package      = "PACKAGE"
 	Use          = "USE"
