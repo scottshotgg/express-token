@@ -33,7 +33,7 @@ var (
 		OperatorMap,
 		SeparatorMap,
 		SQLMap,
-		TypeMap,
+		// TypeMap,
 		WhitespaceMap,
 	}
 
