@@ -3,8 +3,8 @@ package token
 // // FIXME: leave this for fixing until we need it
 
 // // SQLMap is a map of all the SQL specific tokens
-// var SQLMap = map[string]Token{
-// 	"SELECT": Token{
+// var SQLMap = map[string]
+// 	"SELECT":
 // 		ID:   9,
 // 		Type: Keyword,
 // 		Value: Value{
@@ -12,7 +12,7 @@ package token
 // 			String: "SELECT",
 // 		},
 // 	},
-// 	"FROM": Token{
+// 	"FROM":
 // 		ID:   9,
 // 		Type: Keyword,
 // 		Value: Value{
@@ -20,7 +20,7 @@ package token
 // 			String: "FROM",
 // 		},
 // 	},
-// 	"WHERE": Token{
+// 	"WHERE":
 // 		ID:   9,
 // 		Type: Keyword,
 // 		Value: Value{

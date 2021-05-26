@@ -2,72 +2,72 @@ package token
 
 // KeywordMap is a map of all the keywords
 var KeywordMap = map[string]Token{
-	"let": Token{
+	"let": {
 		Type:   "LET",
 		String: "let",
 	},
 
-	"select": Token{
+	"select": {
 		Type:   "SELECT",
 		String: "select",
 	},
 
-	"for": Token{
+	"for": {
 		Type:   "FOR",
 		String: "for",
 	},
 
-	"if": Token{
+	"if": {
 		Type:   "IF",
 		String: "if",
 	},
 
-	"in": Token{
+	"in": {
 		Type:   "IN",
 		String: "in",
 	},
 
-	"of": Token{
+	"of": {
 		Type:   "OF",
 		String: "of",
 	},
 
-	"function": Token{
+	"function": {
 		Type:   "FUNCTION",
 		String: "function",
 	},
 
-	"func": Token{
+	"func": {
 		Type:   "FUNC",
 		String: "func",
 	},
 
-	"fn": Token{
+	"fn": {
 		Type:   "FN",
 		String: "fn",
 	},
 
-	"return": Token{
+	"return": {
 		Type:   "RETURN",
 		String: "return",
 	},
 
-	"onexit": Token{
+	"onexit": {
 		Type:   "ONEXIT",
 		String: "onexit",
 	},
 
-	"onreturn": Token{
+	"onreturn": {
 		Type:   "ONRETURN",
 		String: "onreturn",
 	},
 
-	"onleave": Token{
+	"onleave": {
 		Type:   "ONLEAVE",
 		String: "onleave",
 	},
 
-	"defer": Token{
+	"defer": {
 		Type:   "DEFER",
 		String: "defer",
 	},
