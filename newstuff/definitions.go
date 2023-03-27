@@ -14,7 +14,7 @@ type Token struct {
 	True   interface{} `json:",omitempty"`
 }
 
-//  ...
+// ...
 var (
 	mapArray = []map[string]Token{
 		AssignMap,
@@ -85,17 +85,18 @@ const (
 	For          = "FOR"
 	If           = "IF"
 
-	IntType      = "int"
-	FloatType    = "float"
-	BoolType     = "bool"
-	CharType     = "char"
-	StringType   = "string"
-	StructType   = "struct"
-	ObjectType   = "object"
-	FunctionType = "function"
-	VarType      = "var"
-	ArrayType    = "array"
-	SetType      = "set"
+	IntType       = "int"
+	FloatType     = "float"
+	BoolType      = "bool"
+	CharType      = "char"
+	StringType    = "string"
+	StructType    = "struct"
+	InterfaceType = "interface"
+	ObjectType    = "object"
+	FunctionType  = "function"
+	VarType       = "var"
+	ArrayType     = "array"
+	SetType       = "set"
 	// IntArrayType    = "int[]"
 	// StringArrayType = "string[]"
 
